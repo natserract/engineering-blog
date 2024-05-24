@@ -116,7 +116,10 @@ const components: Components<{
     </span>
   ),
   a: (props) => (
-    <a className="font-semibold underline text-sail-600 hover:text-blue-600 cursor-pointer">
+    <a
+      href={props.url}
+      className="font-semibold underline text-sail-600 hover:text-blue-600 cursor-pointer"
+    >
       {props.children}
     </a>
   ),

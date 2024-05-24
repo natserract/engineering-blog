@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../util/container";
 import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { Components } from "tinacms/dist/rich-text";
@@ -9,7 +8,10 @@ import { tinaField } from "tinacms/dist/react";
 
 const components: Components<any> = {
   a: (props) => (
-    <a className="font-semibold underline text-sail-600 hover:text-blue-600 cursor-pointer">
+    <a
+      href={props.url}
+      className="font-semibold underline text-sail-600 hover:text-blue-600 cursor-pointer"
+    >
       {props.children}
     </a>
   ),

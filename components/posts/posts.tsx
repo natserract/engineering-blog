@@ -64,7 +64,10 @@ export const Posts = ({ data }: { data: PostsType[] }) => {
         <p className="mb-2">
           I am mostly self-taught, and I teach myself whatever topic interests
           me. Most of the times{" "}
-          <a href="https://www.vice.com/en/article/53dpeq/in-defense-of-learning-code-the-hard-way">
+          <a
+            className="underline hover:text-blue-600"
+            href="https://www.vice.com/en/article/53dpeq/in-defense-of-learning-code-the-hard-way"
+          >
             learn things from the hard way
           </a>
           , I mainly work with JavaScript/TypeScript, Python, and Elixir. I've
